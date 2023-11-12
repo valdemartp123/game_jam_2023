@@ -21,8 +21,7 @@ if(gameObject==GameObject.Find("player")){
     if (collision.gameObject.CompareTag("deadly"))
     {
         if (isplayer == true){
-                Debug.Log("mibmmamfmma");
-            SceneManager.LoadScene ("gameover");
+        SceneManager.LoadScene ("gameover");
         }else{
         Destroy(gameObject);
         }

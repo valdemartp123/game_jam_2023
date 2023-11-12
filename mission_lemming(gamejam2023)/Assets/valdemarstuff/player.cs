@@ -43,13 +43,11 @@ public class player : MonoBehaviour
         transform.Rotate(rotation);
         if (  touchground==true&& Input.GetKeyDown(KeyCode.Space)) 
         {
-            float jumpornot =Random.Range(1, 10);
-            if(jumpornot !=10){
+            Debug.Log ("HOP!");
             Vector3 jumpforce = (jumpheight * Time.deltaTime * Vector3.up);
             playerrb.AddForce(jumpforce);
             lemmingmanager.jumpforces.Add(jumpforce);
             touchground = false; 
-            }
         } else { lemmingmanager.jumpforces.Add(new Vector3(0, 0, 0)); }
 
 

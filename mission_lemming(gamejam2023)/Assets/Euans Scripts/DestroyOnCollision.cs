@@ -34,4 +34,17 @@ if(gameObject==GameObject.Find("player")){
     }
    }
 
+   void Update(){
+    if(transform.position.y<-10){
+        if (isplayer == true){
+        SceneManager.LoadScene ("gameover");
+        }else{
+        source.Play();
+        //source.PlayOneShot(clip);
+        Destroy(gameObject,1.5f);
+        ScoreManager.instance.RemovePoint();
+        }
+    }
+   }
+
    }

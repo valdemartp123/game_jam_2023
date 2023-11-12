@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class ScoreManager : MonoBehaviour
 {
     public static ScoreManager instance;
-    
+
     public Text scoreText;
     public Text highscoreText;
 
@@ -36,7 +36,7 @@ public class ScoreManager : MonoBehaviour
             score -= 1;
             scoreText.text = "Score: " + score.ToString();
             if (highscore < score)
-                PlayerPrefs.SetInt("highscore, score");
+                PlayerPrefs.SetInt("highscore", score);
         }
 
   

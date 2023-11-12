@@ -28,7 +28,7 @@ public class player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+       
 
         vinput = Input.GetAxis("Vertical");
         Hinput = Input.GetAxis("Horizontal");

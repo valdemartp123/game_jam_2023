@@ -38,6 +38,8 @@ public class followerscript : MonoBehaviour
             
                 Vector3 jumpforce = lemmingmanager.jumpforces[lemmingstartdelay];
                 transform.GetComponent<Rigidbody>().AddForce(jumpforce);
+
+            
              
         }
 

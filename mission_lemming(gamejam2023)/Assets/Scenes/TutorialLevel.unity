@@ -132,6 +132,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 1054253486945526812, guid: d806878009dad3e4ebeea8dcc60ce1f2, type: 3}
+      propertyPath: touchground
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1054253486945526812, guid: d806878009dad3e4ebeea8dcc60ce1f2, type: 3}
       propertyPath: cameraobject
       value: 
       objectReference: {fileID: 1509490808}

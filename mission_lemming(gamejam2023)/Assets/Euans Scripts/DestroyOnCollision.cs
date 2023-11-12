@@ -7,7 +7,7 @@ public class DestroyOnCollision : MonoBehaviour{
 
 bool isplayer;
 
-void start(){
+void Start(){
 if(gameObject==GameObject.Find("player")){
         isplayer=true;
     }else{
@@ -18,12 +18,13 @@ if(gameObject==GameObject.Find("player")){
    private void OnCollisionEnter(Collision collision)
    {
    
-    if (collision.collider.CompareTag("deadly"))
+    if (collision.gameObject.CompareTag("deadly"))
     {
-        if (isplayer = true){
+        if (isplayer == true){
+                Debug.Log("mibmmamfmma");
             SceneManager.LoadScene ("gameover");
         }else{
-        Destroy(collision.gameObject);
+        Destroy(gameObject);
         }
     }
    }

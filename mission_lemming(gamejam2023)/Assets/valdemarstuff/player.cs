@@ -40,6 +40,7 @@ public class player : MonoBehaviour
         transform.Rotate(rotation);
         if (  touchground==true&& Input.GetKeyDown(KeyCode.Space)) 
         {
+            Debug.Log ("HOP!");
             Vector3 jumpforce = (jumpheight * Time.deltaTime * Vector3.up);
             playerrb.AddForce(jumpforce);
             lemmingmanager.jumpforces.Add(jumpforce);

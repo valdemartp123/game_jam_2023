@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 8612232374465909985}
   - component: {fileID: 3576557309576408348}
   - component: {fileID: 1097889275509252561}
+  - component: {fileID: -1204298782564998015}
   m_Layer: 0
   m_Name: follower
   m_TagString: Untagged
@@ -147,9 +148,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1cf10804c3487a45811e498cc039f8e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lemmingdelay: 0.3
   lemmingstartdelay: 0
   lemmingmanager: {fileID: 0}
+  player: {fileID: 0}
+  forceIndex: 0
+--- !u!114 &-1204298782564998015
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1933948758725659224}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2215b5cfd10c0724c9b58e3d93f7c923, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &5383337773133343081
 GameObject:
   m_ObjectHideFlags: 0

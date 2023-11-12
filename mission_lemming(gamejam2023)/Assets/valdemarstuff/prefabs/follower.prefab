@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 236209140559503107}
   - component: {fileID: 8612232374465909985}
   - component: {fileID: 3576557309576408348}
-  - component: {fileID: 2713499436728327892}
+  - component: {fileID: 1097889275509252561}
   m_Layer: 0
   m_Name: follower
   m_TagString: Untagged
@@ -135,7 +135,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
---- !u!114 &2713499436728327892
+--- !u!114 &1097889275509252561
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -144,13 +144,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1933948758725659224}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 636bc432516ac1e49aaf337a8b5206ee, type: 3}
+  m_Script: {fileID: 11500000, guid: b1cf10804c3487a45811e498cc039f8e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pivot: {fileID: 0}
-  cameraobject: {fileID: 0}
-  jumpheight: 1000
-  speed: 1000
+  lemmingdelay: 0.3
+  lemmingstartdelay: 0
+  lemmingmanager: {fileID: 0}
 --- !u!1 &5383337773133343081
 GameObject:
   m_ObjectHideFlags: 0

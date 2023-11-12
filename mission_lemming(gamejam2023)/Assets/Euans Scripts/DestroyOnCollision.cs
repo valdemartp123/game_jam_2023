@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class DestroyOnCollision : MonoBehaviour
 {
-
+void start(){
     bool isplayer = false;
-
+}
    private void OnCollisionEnter(Collision collision)
    {
     if(gameObject==GameObject.Find("player")){

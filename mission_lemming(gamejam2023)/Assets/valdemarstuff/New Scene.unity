@@ -787,7 +787,7 @@ MonoBehaviour:
   lemminger: []
   lemmingprefab: {fileID: 1933948758725659224, guid: 20b423991424f9348b9001a312629364, type: 3}
   startlemmings: 8
-  lemmingspacing: 13
+  lemmingspacing: 15
   lemmingstartposition: {fileID: 1681731395}
 --- !u!4 &2045786312
 Transform:

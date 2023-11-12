@@ -13,6 +13,7 @@ public class player : MonoBehaviour
     public lemmingmanager lemmingmanager;
     float Hinput;
     public float rotatespeed;
+    public Animator playeranimator;
 
     //coolstuff
 
@@ -20,6 +21,7 @@ public class player : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        playeranimator = gameObject.GetComponent<Animator>();
         lemmingmanager=GameObject.Find("lemmingmanager").GetComponent<lemmingmanager>();
         playerrb =gameObject.GetComponent<Rigidbody>();
     }
@@ -28,6 +30,7 @@ public class player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        
        
 
         vinput = Input.GetAxis("Vertical");
@@ -49,6 +52,13 @@ public class player : MonoBehaviour
             }
         } else { lemmingmanager.jumpforces.Add(new Vector3(0, 0, 0)); }
 
+
+        //check for idlestate
+        if (playerrb.velocity.magnitude <= 0.5f) { playeranimator.SetInteger("animstate", 1); }
+        //check for walk
+        if (playerrb.velocity.magnitude > 0.5f) { playeranimator.SetInteger("animstate", 2); }
+        //check for jump
+        if (playerrb.velocity.y > 0f) { playeranimator.SetInteger("animstate", 3); }
     }
 
 

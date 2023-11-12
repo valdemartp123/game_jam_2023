@@ -24,7 +24,7 @@ if(gameObject==GameObject.Find("player")){
         SceneManager.LoadScene ("gameover");
         }else{
         Destroy(gameObject);
-        SceneManager.instance.RemovePoint();
+        ScoreManager.instance.RemovePoint();
         }
     }
    }

@@ -4,11 +4,23 @@ using UnityEngine;
 
 public class DestroyOnCollision : MonoBehaviour
 {
+
+    bool isplayer = false;
+
    private void OnCollisionEnter(Collision collision)
    {
-    if (collision.collider.CompareTag("Player"))
+    if(gameObject==GameObject.Find("player")){
+        isplayer=true;
+    }else{
+        isplayer=false;
+    }
+    if (collision.collider.CompareTag("deadly"))
     {
+        if (isplayer = true){
+            SceneManager.LoadScene (gameover);
+        }else{
         Destroy(collision.gameObject);
+        }
     }
    }
 

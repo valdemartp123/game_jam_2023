@@ -17,7 +17,7 @@ void start(){
     if (collision.collider.CompareTag("deadly"))
     {
         if (isplayer = true){
-            SceneManager.LoadScene (gameover);
+            SceneManager.LoadScene ("gameover");
         }else{
         Destroy(collision.gameObject);
         }

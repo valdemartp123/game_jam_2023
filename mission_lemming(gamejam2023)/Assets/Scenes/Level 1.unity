@@ -5016,6 +5016,14 @@ PrefabInstance:
       propertyPath: m_TagString
       value: deadly
       objectReference: {fileID: 0}
+    - target: {fileID: 6141522208375471566, guid: 63c4d011d0cad824aae0fd67580d4db3, type: 3}
+      propertyPath: m_TagString
+      value: deadly
+      objectReference: {fileID: 0}
+    - target: {fileID: 6626359372403404230, guid: 63c4d011d0cad824aae0fd67580d4db3, type: 3}
+      propertyPath: m_TagString
+      value: deadly
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8658,6 +8666,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: player
       objectReference: {fileID: 0}
+    - target: {fileID: 6604860339896614644, guid: d806878009dad3e4ebeea8dcc60ce1f2, type: 3}
+      propertyPath: clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 48e911c2d7f7c4615a008e7e8d9aa9ff, type: 3}
     - target: {fileID: 8684977617623520027, guid: d806878009dad3e4ebeea8dcc60ce1f2, type: 3}
       propertyPath: m_LocalPosition.x
       value: -7.53

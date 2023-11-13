@@ -45,7 +45,7 @@ public class followerscript : MonoBehaviour
 
         lemmingstartdelay++;
 
-
+        
     }
 
     public void programbit()
